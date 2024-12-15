@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <!-- Attempts Left -->
+      <div id="attemptsInfo" class="attempts-info">
+        <p>Attempts Left: <span id="attemptsLeft">3</span></p>
+      </div>
+
+      <!-- Game Board -->
+      <div id="gameBoard" class="game-board">
+        <!-- Cards will be dynamically generated -->
+      </div>
+
+      <!-- Hero and Speech Bubble -->
+      <div id="heroContainer" class="hero-container">
+        <img src="images/hero.png" alt="Hero" class="hero-image" />
+        <div class="speech-bubble">
+          <p>Hurry! You must help save the subreddit by finding all the matching tools!</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Game Over Overlay -->
+    <div id="gameOverOverlay" class="overlay">
+      <div class="overlay-content">
+        <p id="gameOverMessage" class="game-over-message">Game Over!</p>
+        <button id="restartButton">Restart Game</button>
+      </div>
+    </div>
+    
+    <script type="application/javascript" src="script.js"></script>
+  </body>
+</html>
